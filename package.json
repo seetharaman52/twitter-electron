@@ -1,0 +1,37 @@
+{
+  "name": "Twitter-electron",
+  "version": "1.0.0",
+  "author":"Seetharaman",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^16.0.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.example.myelectronapp",
+    "files": [
+      "index.js",
+      "preload.js",
+      "index.html"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "icon": "icon.png",
+    "linux": {
+      "target": "AppImage",
+      "category": "Social"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  }
+}
