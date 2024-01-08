@@ -20,3 +20,5 @@ Move the .desktop file to applications folder
 ```bash
 sudo cp Twitter-Electron.desktop /usr/share/applications/
 ```
+SHA256sum:
+dd01cbee267520e8f02048330e29d6d35d6f57b52e74eb5087de7a7a35d104c3
